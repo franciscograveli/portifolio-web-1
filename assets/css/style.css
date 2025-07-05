@@ -51,11 +51,12 @@ body {
     font-family: var(--font-family);
     color: var(--text-primary);
     font-size: var(--font-size-base);
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 /* Header */
 .header {
+    padding: .5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
