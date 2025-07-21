@@ -73,7 +73,7 @@ body {
     width: 36px;
     height: 36px;
     background-color: var(--accent);
-    background-image: url('assets/img/logo-fundo.png');
+    background-image: url('/assets/img/logo-fundo.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -236,10 +236,26 @@ footer a {
     transform: translate(-5px, -5px);
 }
 
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+
 footer:hover a {
     transition: .5s;
     color: var(--text-primary);
 }
+
 
 /* animation */
 @keyframes border-shiny {
