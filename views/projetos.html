@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./../assets/favicon/favicon.ico" type="image/x-icon">
-    <title>Francisco - Portfólio</title>
+    <title>Francisco - Portfólio - Projetos</title>
     <link rel="stylesheet" href="./../assets/css/style.css" />
+    <link rel="stylesheet" href="./../assets/css/extras.css" />
+    <link rel="stylesheet" href="./../assets/css/project.css" />
 </head>
 
 <body>
@@ -16,7 +18,7 @@
             <h1>Francisco Carlos</h1>
         </div>
         <nav class="nav">
-            <a href="/">Home</a>
+            <a href="./../index.html">Home</a>
             <a href="#">Projetos</a>
             <a href="./sobre.html">Sobre</a>
             <a href="./contato.html">Contato</a>
@@ -24,33 +26,38 @@
     </header>
 
     <main class="hero">
-        <section id="about" class="about-section">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Eu sou <strong>Francisco Carlos</strong>, desenvolvedor web full stack especializado em criar
-                soluções robustas e eficientes para empresas que buscam transformar seus processos através da
-                tecnologia.</p>
+        <section id="projects" class="projects-section">
+            <h2>Projetos Desenvolvidos</h2>
 
-            <p>Atuo profissionalmente desde 2022, mas meu envolvimento com programação começou bem antes, em 2019. Tenho
-                experiência sólida com desenvolvimento backend em <strong>Laravel (PHP)</strong> e frontend em
-                <strong>Vue.js</strong>, além de estar sempre explorando novas tecnologias para entregar projetos
-                modernos e bem estruturados.
-            </p>
+            <div class="project">
+                <img src="https://picsum.photos/id/1011/900/400" alt="Sistema Cooperativa de Laticínios"
+                    class="project-img">
+                <h3>Sistema de Monitoramento para Cooperativa de Laticínios</h3>
+                <p>Plataforma web desenvolvida para gestão de supervisores, vendedores e clientes, integrando relatórios
+                    de desempenho e controle de visitas. Utiliza <strong>Laravel</strong> no back-end e uma interface
+                    personalizada para facilitar a gestão interna da cooperativa.</p>
+            </div>
 
-            <p>Já desenvolvi sistemas para instituições acadêmicas como <strong>IF Sudeste MG</strong>,
-                <strong>UFJF</strong> e organizações como o <strong>IEEE</strong>, além de projetos privados e
-                empresariais, incluindo plataformas completas com <strong>e-commerce</strong>, <strong>CMS</strong> e
-                <strong>APIs integradas</strong>.
-            </p>
+            <div class="project">
+                <img src="https://picsum.photos/id/1005/900/400" alt="Portal Acadêmico IEEE" class="project-img">
+                <h3>Portal Acadêmico IEEE</h3>
+                <p>Desenvolvimento de um portal acadêmico para o <strong>IEEE</strong>, com foco na divulgação de
+                    eventos, submissão de artigos e inscrições. Sistema completo com <strong>CMS</strong> personalizado
+                    para gerenciamento do conteúdo pelo próprio cliente.</p>
+            </div>
 
-            <p>Atualmente, também estou à frente de um projeto próprio de e-commerce, que une minha paixão por
-                desenvolvimento à vontade de empreender no mundo digital.</p>
+            <div class="project">
+                <img src="https://picsum.photos/id/1015/900/400" alt="Plataforma E-commerce Proprietária"
+                    class="project-img">
+                <h3>Plataforma E-commerce Proprietária</h3>
+                <p>Projeto autoral de um sistema de e-commerce completo, dividido em <strong>Site</strong>,
+                    <strong>CMS</strong> e <strong>API</strong>. Utiliza <strong>Vue.js</strong> no front-end e
+                    <strong>Laravel</strong> no back-end, com arquitetura otimizada para performance, escalabilidade e
+                    segurança.
+                </p>
+            </div>
 
-            <p>Valorizo a construção de soluções personalizadas que realmente resolvem problemas, sempre com foco em
-                <strong>performance</strong>, <strong>segurança</strong> e <strong>facilidade de uso</strong>.
-            </p>
 
-            <p>Se você busca um profissional comprometido, com visão estratégica e foco em resultados, <strong>vamos
-                    conversar!</strong></p>
         </section>
     </main>
 
