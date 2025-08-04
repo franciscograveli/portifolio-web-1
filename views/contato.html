@@ -4,81 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./../assets/favicon/favicon.ico" type="image/x-icon">
-    <title>Contato - Francisco Carlos</title>
+    <link rel="shortcut icon" href="./../assets/favicon/favicon.ico" type="image/x-icon" />
+    <title>Francisco - Portfólio - Contato</title>
     <link rel="stylesheet" href="./../assets/css/style.css" />
-    <style>
-        .contact-section {
-            max-width: 800px;
-            margin: 4rem auto;
-            padding: 2rem;
-            background-color: var(--bg-secondary);
-            border-radius: var(--radius-md);
-            box-shadow: var(--box-shadow-light);
-        }
-
-        .contact-section h2 {
-            font-size: var(--font-size-heading);
-            margin-bottom: 1rem;
-        }
-
-        .contact-section p {
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        label {
-            font-weight: 500;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            font-size: 1rem;
-            font-family: var(--font-family);
-            background-color: #fff;
-            color: #000;
-        }
-
-        input:focus,
-        textarea:focus {
-            outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(0, 194, 255, 0.2);
-        }
-
-        button {
-            background-color: var(--accent);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: var(--radius-md);
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-            align-self: flex-start;
-        }
-
-        button:hover {
-            background-color: var(--accent-hover);
-        }
-
-        @media (max-width: 600px) {
-            .contact-section {
-                margin: 2rem 1rem;
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./../assets/css/extras.css" />
+    <link rel="stylesheet" href="./../assets/css/contact.css">
 </head>
 
 <body>
@@ -88,40 +18,44 @@
             <h1>Francisco Carlos</h1>
         </div>
         <nav class="nav">
-            <a href="/">Projetos</a>
-            <a href="#">Sobre</a>
-            <a href="/views/contato.html">Contato</a>
+            <a href="./../index.html">Home</a>
+            <a href="./projetos.html">Projetos</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="./contato.html" class="active">Contato</a>
         </nav>
     </header>
 
-    <main class="contact-section">
-        <h2>Entre em Contato</h2>
-        <p>Se você tem uma ideia, projeto ou apenas quer conversar, preencha o formulário abaixo:</p>
+    <main class="hero">
+        <section class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Se você tem uma ideia, projeto ou apenas quer conversar, preencha o formulário abaixo:</p>
 
-        <form action="mailto:seuemail@email.com" method="POST" enctype="text/plain">
-            <div>
-                <label for="nome">Nome</label><br />
-                <input type="text" id="nome" name="nome" required />
-            </div>
+            <form action="" method="POST" id="contact-form">
+                <div>
+                    <label for="nome">Nome</label><br />
+                    <input type="text" id="nome" name="nome" required />
+                </div>
 
-            <div>
-                <label for="email">E-mail</label><br />
-                <input type="email" id="email" name="email" required />
-            </div>
+                <div>
+                    <label for="email">E-mail</label><br />
+                    <input type="email" id="email" name="email" required />
+                </div>
 
-            <div>
-                <label for="mensagem">Mensagem</label><br />
-                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
-            </div>
+                <div>
+                    <label for="mensagem">Mensagem</label><br />
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <a href="https://github.com/Francisco-Carlos">
-            &copy; 2023 Francisco Carlos</a>
+        <a href="https://github.com/Francisco-Carlos">&copy; 2023 Francisco Carlos</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./../assets/js/contactFormValidator.js"></script>
 </body>
 
 </html>

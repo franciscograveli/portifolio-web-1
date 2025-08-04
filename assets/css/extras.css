@@ -1,0 +1,51 @@
+/* animation */
+@keyframes border-shiny {
+    0% {
+        border-color: var(--border-color);
+
+    }
+
+    50% {
+        border-top-color: var(--accent);
+    }
+
+    100% {
+        border-color: var(--border-color);
+    }
+}
+
+@keyframes spin-border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Barra lateral */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--accent) var(--bg-primary);
+}
